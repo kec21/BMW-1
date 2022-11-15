@@ -1,7 +1,6 @@
-let iwgps;
-
+let img;
 function preload(){
-iwgps = createImg('invisiblewoundgps.jpg')
+img = loadImage('invisiblewound.jpg');
 }
 
 function setup() {
@@ -10,5 +9,5 @@ function setup() {
 
 function draw() {
   background(125);
-  iwgps.position(0,0);
+  image(img, 0, 0);
 }
