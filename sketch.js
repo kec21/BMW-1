@@ -1,13 +1,14 @@
-let img;
+let iwgps;
+
 function preload(){
-  img = loadImage('invisiblewoundgps.jpg');
+iwgps = createImg('invisiblewoundgps.jpg')
 }
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  image(img,0,0)
 }
 
 function draw() {
   background(125);
+  iwgps.position(0,0);
 }
