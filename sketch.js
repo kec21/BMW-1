@@ -1,14 +1,16 @@
 let img;
+const poly = [];
+
 function preload(){
-img = loadImage('invisiblewound.jpg');
+img = loadImage('invisiblewound.jpg')
 }
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  poly[0] = createVector(10,20);
-  poly[1] = createVector(30,40);
-  poly[2] = createVector(50,60);
-  //poly[3] = createVector();
+  poly[0] = createVector(350,200);
+  poly[1] = createVector(200,850);
+  poly[2] = createVector(20,200);
+  poly[3] = createVector(100,200);
   //poly[4] = createVector();
   //poly[5] = createVector();
   //poly[6] = createVector();
