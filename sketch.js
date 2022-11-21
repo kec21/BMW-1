@@ -1,6 +1,7 @@
 let img;
 const poly = [];
 
+
 function preload(){
 img = loadImage('invisiblewound.jpg')
 }
@@ -31,7 +32,7 @@ function windowResized() {
 
 function draw() {
   background(125);
-  image(img, 0, 0, windowWidth, windowHeight);
+  image(img, 0, 0, width, height);
   beginShape();
   for (const {x,y} of poly) vertex(x,y);
   endShape(CLOSE);
