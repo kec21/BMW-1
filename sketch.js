@@ -6,11 +6,11 @@ img = loadImage('invisiblewound.jpg')
 }
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
-  poly[0] = createVector(350,200);
-  poly[1] = createVector(200,850);
-  poly[2] = createVector(20,200);
-  poly[3] = createVector(100,200);
+  createCanvas(1000,1000);
+  poly[0] = createVector(10,10);
+  poly[1] = createVector(20,20);
+  poly[2] = createVector(100,100);
+  poly[3] = createVector();
   //poly[4] = createVector();
   //poly[5] = createVector();
   //poly[6] = createVector();
