@@ -15,10 +15,10 @@ function centerCanvas() {
 function setup() {
   cnv = createCanvas(1000,1000);
   centerCanvas ();
-  poly[0] = createVector(10,10);
-  poly[1] = createVector(20,20);
-  poly[2] = createVector(100,100);
-  poly[3] = createVector();
+  //poly[0] = createVector(10,10);
+  //poly[1] = createVector(20,20);
+  //poly[2] = createVector(100,100);
+  //poly[3] = createVector();
   //poly[4] = createVector();
   //poly[5] = createVector();
   //poly[6] = createVector();
