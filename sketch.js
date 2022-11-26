@@ -3,7 +3,7 @@ const poly = [];
 const poly2 = [];
 const poly3 = [];
 const poly4 = [];
-let phrases = ["YOU ARE PERFECTLY HEALTHY","STOP BEING SO NEGATIVE","I CAN'T SEE ANYTHING WRONG","IF IT HURTS, DON'T DO THAT","PAIN IS ALL IN THE MIND"];
+let phrases = ["YOU ARE PERFECTLY HEALTHY","STOP BEING SO NEGATIVE","I CAN'T SEE ANYTHING WRONG","IF IT HURTS, DON'T DO THAT","PAIN IS ALL IN THE MIND","ARE YOU FEELING STRESSED OR DEPRESSED?","PAIN IS SUBJECTIVE","BEING OVERWEIGHT CAN ADD UP TO 5LBS OF PRESSURE TO YOUR JOINTS",];
 let phrases2 = [];
 let phrases3 = [];
 let phrases4 = [];
@@ -81,7 +81,7 @@ function draw() {
 function mouseClicked() {
   hit = collidePointPoly(mouseX,mouseY,poly);
   if (hit) {
-    let thisphrase = phrases[round(random(5))]
+    let thisphrase = phrases[round(random(8))]
     alert(thisphrase)
   }
 
