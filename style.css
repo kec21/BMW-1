@@ -7,3 +7,12 @@ canvas {
   display: inline-block;
   z-index: 0;
 }
+
+#exitbutton {
+  position: absolute;
+  left:10px;
+  top:10px;
+  width:200px;
+  padding:20px;
+  background-color:cornflowerblue;
+}
