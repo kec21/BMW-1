@@ -1,7 +1,7 @@
 let img;
 const poly = [];
 const poly2 = [];
-let phrases = ["YOU ARE PERFECTLY HEALTHY","STOP BEING SO NEGATIVE","I CAN'T SEE ANYTHING WRONG","IF IT HURTS, DON'T DO THAT","PAIN IS ALL IN THE MIND","ARE YOU FEELING STRESSED OR DEPRESSED?","PAIN IS SUBJECTIVE","BEING OVERWEIGHT CAN ADD UP TO 5LBS OF PRESSURE TO YOUR JOINTS",];
+let phrases = ["YOU ARE PERFECTLY HEALTHY","STOP BEING SO NEGATIVE","I CAN'T SEE ANYTHING WRONG","IF IT HURTS, DON'T DO THAT","PAIN IS ALL IN THE MIND","ARE YOU FEELING STRESSED OR DEPRESSED?","PAIN IS SUBJECTIVE","BEING OVERWEIGHT CAN ADD UP TO 5LBS OF PRESSURE TO YOUR JOINTS","HAVE YOU TRIED EXERCISE?","YOU ARE TOO YOUNG TO BE IN PAIN"];
 
 
 function preload(){
@@ -78,9 +78,14 @@ function draw() {
 }
 
 function mouseClicked() {
-  hit = collidePointPoly(mouseX,mouseY,poly);
-  if (hit) {
-    let thisphrase = phrases[round(random(7))]
+  hit1 = collidePointPoly(mouseX,mouseY,poly);
+  hit2 = collidePointPoly(mouseX,mouseY,poly2);
+  if (hit1) {
+    let thisphrase = phrases[round(random(9))]
     alert(thisphrase)
   }
+  if (hit2) {
+    
+  }
+  
 }
