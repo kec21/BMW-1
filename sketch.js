@@ -84,11 +84,3 @@ function mouseClicked() {
     alert(thisphrase)
   }
 }
-
-function mouseClicked() {
-  hit = collidePointPoly2(mouseX,mouseY,poly2);
-  if (hit) {
-    let thisphrase = phrases[round(random(7))]
-    alert(thisphrase)
-  }
-}
