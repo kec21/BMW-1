@@ -1,5 +1,6 @@
 let img;
 const poly = [];
+const poly2 = [];
 let phrases = ["YOU ARE PERFECTLY HEALTHY","STOP BEING SO NEGATIVE","I CAN'T SEE ANYTHING WRONG","IF IT HURTS, DON'T DO THAT","PAIN IS ALL IN THE MIND","ARE YOU FEELING STRESSED OR DEPRESSED?","PAIN IS SUBJECTIVE","BEING OVERWEIGHT CAN ADD UP TO 5LBS OF PRESSURE TO YOUR JOINTS",];
 
 
@@ -55,6 +56,10 @@ function setup() {
   poly[35] = createVector(150,650);
   poly[36] = createVector(80,632);
   poly[37] = createVector(81,582);
+  poly2[0] = createVector(378,879);
+  poly2[1] = createVector(625,881);
+  poly2[2] = createVector(625,962);
+  poly2[3] = createVector(376,961);
 }
 
 function windowResized() {
@@ -78,5 +83,12 @@ function mouseClicked() {
     let thisphrase = phrases[round(random(7))]
     alert(thisphrase)
   }
+}
 
+function mouseClicked() {
+  hit = collidePointPoly2(mouseX,mouseY,poly2);
+  if (hit) {
+    let thisphrase = phrases[round(random(7))]
+    alert(thisphrase)
+  }
 }
